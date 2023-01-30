@@ -180,34 +180,7 @@ public class ShopSettings {
 
 	public static void main(String[] args) {
 		
-		Scanner in = new Scanner(System.in);
-
-		while (true) {
-			System.out.println("Shop Setting");
-			System.out.println("*******************************");
-			System.out.println("Menu:");
-			System.out.println("1:Load Data (Items and invoices).");
-			System.out.println("2:Set Shop Name (data should be saved).");
-			System.out.println("3:Set Invoice Header (Tel / Fax / Email / Website) (Data should be saved) ");
-			System.out.println("4:Go Back");
-			System.out.println("*******************************");
-			System.out.println("Enter a number from menu: ");
-			int choice = in.nextInt();
-
-			switch (choice) {
-			case 1: {
-			//	loadDataInvoice();
-				loadDataItem();
-			 break;
-			}case 2: {
-				insertDataIntoShopTable();
-			 break;
-			}case 3: {
-			 break;
-			}case 4: {
-			  return;
-			}}
-			}
+	
 		
 
 	}
