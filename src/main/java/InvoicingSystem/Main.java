@@ -34,13 +34,14 @@ public class Main {
 			}
 			}catch(InputMismatchException ee) {
 				System.out.println("Error! Password can not be string. Run the program again!");
-			}
+			} 
 		
 
 		// switch statement inside switch statement:-
 		// https://stackoverflow.com/questions/1583744/java-question-is-it-possible-to-have-a-switch-statement-within-another-one
 
 		boolean isExit = true;
+		boolean goBack = true;
 
 		Scanner in = new Scanner(System.in);
 		try {
@@ -85,7 +86,7 @@ public class Main {
 						} else if (op == 3) {
 							ssobj.loadDataInvoice(); // already these columns added in invoice table.
 						} else if (op == 4) {
-							menuObj.applicationMainMenu();
+							goBack=false;
 						} else {
 							System.out.println("t is not an option, try again.");
 						}
@@ -128,8 +129,7 @@ public class Main {
 						} else if (opt == 4) {
 							msiobj.reportAllItems();
 						} else if (opt == 5) {
-							menuObj.applicationMainMenu();
-							
+							goBack=false;
 						} else {
 							System.out.println("it is no an option, try again");
 						}

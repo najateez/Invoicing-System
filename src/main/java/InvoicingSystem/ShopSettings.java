@@ -176,11 +176,52 @@ public class ShopSettings {
 	 
 	 
 	 
+	 public static void ShhhopSettingsss() {
+			Scanner in=new Scanner(System.in);
+			
+			boolean goBack=true;
+			
+			do {
+			  System.out.println("Shop Setting");
+			  System.out.println("*******************************");
+			  System.out.println("Menu:");
+			  System.out.println("1:Load Data (Items and invoices).");
+			  System.out.println("2:Set Shop Name (data should be saved).");
+			  System.out.println("3:Set Invoice Header (Tel / Fax / Email / Website) (Data should be saved) ");
+			  System.out.println("4:Go Back");
+			  System.out.println("*******************************");
+			  System.out.println("enter number 1: (case number)");
+			 
+			int option = in.nextInt();
+
+			switch (option) {
+			case 1:{
+				
+				System.out.println("enter your option from menu above: ");
+				int op = in.nextInt();
+				if (op == 1) {
+					loadDataInvoice();
+					loadDataItem();
+				} else if (op == 2) {
+					insertDataIntoShopTable();
+				} else if (op == 3) {
+					loadDataInvoice(); // already these columns added in invoice table.
+				} else if (op == 4) {
+					Menu menuObj=new Menu();
+					menuObj.applicationMainMenu();
+					goBack=false;
+				} else {
+					System.out.println("t is not an option, try again.");
+				}
+			}
+			
+		}
+	 }while(goBack);
+	 }
 	 
 
 	public static void main(String[] args) {
-		
-		
+	
 		
 		
 		
