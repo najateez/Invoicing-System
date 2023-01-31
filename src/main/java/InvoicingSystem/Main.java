@@ -24,7 +24,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		//switch case inside switch case:-
+		//switch statement inside switch statement:-
 		//https://stackoverflow.com/questions/1583744/java-question-is-it-possible-to-have-a-switch-statement-within-another-one
 		
 		boolean isExit= true;
@@ -130,8 +130,12 @@ public class Main {
 		reportObj.readReportAllInvoicesFromInvoiceTable();
 		break;
 	}case 6:{
+		SearchReport reportObj= new SearchReport();
+		reportObj.searchById();
 		break;
 	}case 7:{
+		Report reportObj= new Report();
+		reportObj.programStatisticsPrintMenuItemWithHowManyNumberSelected();
 		break;
 	}case 8:{
 		

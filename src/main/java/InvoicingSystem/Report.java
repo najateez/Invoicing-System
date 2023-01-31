@@ -81,6 +81,49 @@ public static void readReportAllInvoicesFromInvoiceTable(){
 		}
 	}
 
+
+public static void programStatisticsPrintMenuItemWithHowManyNumberSelected(){
+	
+    String url = "jdbc:mysql://localhost:3306/invoicingsystem";
+    String user = "root";
+    String pass = "10@104Ar$";
+
+	Scanner in = new Scanner(System.in);
+	
+	int readRows;
+	System.out.println("enter how many items you want to print on consol:");
+	readRows = in.nextInt();
+	
+	int count = 0;
+	Connection con = null;
+	
+	try {
+		 Driver driver = (Driver) Class.forName("com.mysql.jdbc.Driver").newInstance();
+		 DriverManager.registerDriver(driver);
+		 con = DriverManager.getConnection(url, user, pass);
+		 Statement st = con.createStatement();
+		 
+		 
+		 String sql = "SELECT * FROM Item";
+		 ResultSet rs = st.executeQuery(sql);  //ResultSet class import from library
+		 
+		while (rs.next() && count < readRows) {
+			int item_id = rs.getInt("item_id");
+			String item_name = rs.getString("item_name");
+			double unit_price = rs.getDouble("unit_price");
+			int quantity = rs.getInt("quantity");
+			double price = rs.getDouble("price");
+			int invoice_id = rs.getInt("invoice_id");
+			
+			System.out.println("item id:"+ item_id + ", item name:" + item_name +", unit_price: " + unit_price +", quantity:" + quantity + ", price:" + price + ", invoice_id:" + invoice_id);
+			count++;
+		 }
+		con.close();
+	}catch (Exception ex) {
+		System.err.println(ex);
+	}
+}
+
 	public static void main(String[] args) {
 		
 		
