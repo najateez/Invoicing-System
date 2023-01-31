@@ -45,7 +45,7 @@ public class Main {
 		Scanner in = new Scanner(System.in);
 		try {
 			do {
-
+				
 				Menu menuObj = new Menu();
 				menuObj.applicationMainMenu();
 
@@ -74,6 +74,7 @@ public class Main {
 
 					switch (option) {
 					case 1:{
+						
 						System.out.println("enter your option from menu above: ");
 						int op = in.nextInt();
 						if (op == 1) {
@@ -85,13 +86,11 @@ public class Main {
 							ssobj.loadDataInvoice(); // already these columns added in invoice table.
 						} else if (op == 4) {
 							menuObj.applicationMainMenu();
-							boolean goBack= false;
-							break;
 						} else {
 							System.out.println("t is not an option, try again.");
 						}
 					}
-					break;
+					
 				}
 					break;
 				}case 2: {
@@ -116,6 +115,7 @@ public class Main {
 
 					switch (optionn) {
 					case 1: {
+						
 						System.out.println("enter your option from menu above: ");
 						int opt = in.nextInt();
 
@@ -129,16 +129,13 @@ public class Main {
 							msiobj.reportAllItems();
 						} else if (opt == 5) {
 							menuObj.applicationMainMenu();
-							boolean goBack= false;
-							break;
+							
 						} else {
 							System.out.println("it is no an option, try again");
 						}
-					}
 						break;
-					}
-					break;
-				}
+						}
+
 				case 3: {
 					ShopSettings ssObj = new ShopSettings();
 					ssObj.loadDataInvoice();
@@ -176,13 +173,12 @@ public class Main {
 					}
 					break;
 				}
-				}
+			}}}
 			} while (isExit);
-
+				
 		} catch (InputMismatchException e) {
 			System.out.println("Error!: enter any number from menu above. can not be string, try again.");
 		} catch (Exception e1) {
 			System.out.println(e1.getMessage());
 		}
-	}
-}
+	}}

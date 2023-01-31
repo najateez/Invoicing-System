@@ -20,6 +20,23 @@ public class DataStructure {
         for (Object i : arr) {
             System.out.print(i + " ");
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //https://www.geeksforgeeks.org/arrays-sort-in-java-with-examples/
 
 	}
 
