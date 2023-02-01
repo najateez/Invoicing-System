@@ -122,7 +122,7 @@ public class ManageShopItems {
 			String sql = "update Item set price =? where item_id = ?";
 			PreparedStatement pstmt = (PreparedStatement) con.prepareStatement(sql);
 			
-			System.out.println(" enter new price:");
+			System.out.println("enter new price:");
 			double price =in.nextDouble();
 			
 			pstmt.setDouble(1,price);
@@ -141,7 +141,7 @@ public class ManageShopItems {
 				 price= rs.getDouble("price");
 				int invoice_id= rs.getInt("invoice_id");
 				
-				System.out.println("item id:"+item_id + ", item_name:" + item_name + ", unit_price:" + unit_price + ", quantity:" + quantity + ", price:" + price + ", isActive:" + invoice_id);
+				System.out.println("item id:"+item_id + ", item_name:" + item_name + ", unit_price:" + unit_price + ", quantity:" + quantity + ", price:" + price + ", invoice id:" + invoice_id);
 			}
 		} catch (Exception e) {
 			System.out.println(e);

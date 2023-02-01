@@ -32,8 +32,8 @@ public class Main {
 				System.out.println("Invalid url or user or password!");
 			}
 			}
-			}catch(InputMismatchException ee) {
-				System.out.println("Error! Password can not be string. Run the program again!");
+			}catch(Exception ee) {
+				System.out.println(ee.getMessage());
 			} 
 		
 
@@ -133,10 +133,12 @@ public class Main {
 						} else {
 							System.out.println("it is no an option, try again");
 						}
-						break;
 						}
-
+					}
+					break;
+					}
 				case 3: {
+					
 					ShopSettings ssObj = new ShopSettings();
 					ssObj.loadDataInvoice();
 					break;
@@ -173,12 +175,13 @@ public class Main {
 					}
 					break;
 				}
-			}}}
+			}
 			} while (isExit);
-				
+			
 		} catch (InputMismatchException e) {
 			System.out.println("Error!: enter any number from menu above. can not be string, try again.");
 		} catch (Exception e1) {
 			System.out.println(e1.getMessage());
 		}
-	}}
+	}
+}
