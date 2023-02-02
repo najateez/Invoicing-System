@@ -40,8 +40,8 @@ public static void createInvoiceTable() {
 	            Statement st = con.createStatement();
 
 	            int m = st.executeUpdate(invoiceTable);
-	            if (m >=  1) {
-	                System.out.println("table invoice created successfully : " + invoiceTable);
+	            if (m <=  1) {
+	                System.out.println("table invoice created successfully.");
 	                
 	            }
 	            else {
@@ -49,7 +49,7 @@ public static void createInvoiceTable() {
 	            }
 	            con.close();
 	        } catch (Exception ex) {
-	            System.err.println(ex);
+	            System.err.println("table invoice already exists.");
 	  }
 	        
 	}
@@ -81,8 +81,8 @@ public static void createItemTable() {
             Statement st = con.createStatement();
 
             int m = st.executeUpdate(itemTable);
-            if (m >=  1) {
-                System.out.println("table item created successfully : " + itemTable);
+            if (m <=  1) {
+                System.out.println("table item created successfully.");
                 
             }
             else {
@@ -90,7 +90,7 @@ public static void createItemTable() {
             }
             con.close();
         } catch (Exception ex) {
-            System.err.println(ex);
+            System.err.println("table item already exists.");
   }
         
 }
@@ -119,8 +119,8 @@ public static void createShopTable() {
             Statement st = con.createStatement();
 
             int m = st.executeUpdate(shopTable);
-            if (m >=  1) {
-                System.out.println("table Shop created successfully : " + shopTable);
+            if (m <=  1) {
+                System.out.println("table Shop created successfully.");
                 
             }
             else {
@@ -128,16 +128,15 @@ public static void createShopTable() {
             }
             con.close();
         } catch (Exception ex) {
-            System.err.println(ex);
+            System.err.println("table shop already exists.");
   }
         
 }
 
 	public static void main(String[] args) {
 		
-		createInvoiceTable();
-		createItemTable();
-		createShopTable();
+		
+		
 		
 
 	}

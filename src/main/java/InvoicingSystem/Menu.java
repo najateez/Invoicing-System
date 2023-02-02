@@ -6,6 +6,7 @@ public static void applicationMainMenu() {
 		
 		System.out.println("Application Main Menu:");
 		System.out.println("*******************************");
+		System.out.println("0) Enter URL,user name, and password.");
 		System.out.println("1) Shop Settings");
 		System.out.println("2) Manage Shop Items");
 		System.out.println("3) Create New Invoice");
