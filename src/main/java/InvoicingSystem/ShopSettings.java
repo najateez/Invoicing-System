@@ -176,7 +176,7 @@ public class ShopSettings {
 	 
 	 
 	 
-	 public static void ShhhopSettingsss() {
+/*	 public static void ShhhopSettingsss() {
 			Scanner in=new Scanner(System.in);
 			
 			boolean goBack=true;
@@ -208,7 +208,7 @@ public class ShopSettings {
 					loadDataInvoice(); // already these columns added in invoice table.
 				} else if (op == 4) {
 					Menu menuObj=new Menu();
-					menuObj.applicationMainMenu();
+					menuObj.showAllMenusInOneMethod(1);
 					goBack=false;
 				} else {
 					System.out.println("t is not an option, try again.");
@@ -217,7 +217,7 @@ public class ShopSettings {
 			
 		}
 	 }while(goBack);
-	 }
+	 } */
 	 
 
 	public static void main(String[] args) {

@@ -23,7 +23,9 @@ public class Main {
 			do {
 
 				Menu menuObj = new Menu();
-				menuObj.applicationMainMenu();
+				menuObj.showAllMenusInOneMethod(1);
+				
+
 
 				int choice = in.nextInt();
 
@@ -67,7 +69,9 @@ public class Main {
 				case 1: {
 
 					Menu menuObj1 = new Menu();
-					menuObj1.shopSettingMenu();
+					menuObj1.showAllMenusInOneMethod(2); 
+					
+				
 
 					ShopSettings ssobj = new ShopSettings();
 
@@ -108,7 +112,9 @@ public class Main {
 				}case 2: {
 
 					Menu menuObj2 = new Menu();
-					menuObj2.manageShopItemsMenu();
+					menuObj2.showAllMenusInOneMethod(3); 
+					
+				
 
 					ManageShopItems msiobj = new ManageShopItems();
 
