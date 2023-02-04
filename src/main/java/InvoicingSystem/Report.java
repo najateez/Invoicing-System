@@ -93,6 +93,14 @@ public static void programStatisticsPrintMainAppMenuWithHowManyNumberSelected(){
 		Map<Integer, Map<Integer,String>> counterMap= new HashMap <Integer, Map<Integer,String>>();
 		
 		int count = 0;	
+		int count1 = 0;
+		int count2 = 0;
+		int count3 = 0;
+		int count4 = 0;
+		int count5 = 0;
+		int count6 = 0;
+		int count7 = 0;
+		int count8 = 0;
 		boolean isExit=true;
 		
 		while(isExit) {
@@ -111,35 +119,53 @@ public static void programStatisticsPrintMainAppMenuWithHowManyNumberSelected(){
 			count=count+1;
 		}else if(number == 1) {
 				inputString="Shop Settings.";
-			count=count+1;
+			count1=count1+1;
 		}else if(number == 2) {
 				inputString="Manage Shop Items.";
-			count=count+1;
+			count2=count2+1;
 		}else if(number == 3){
 				inputString="Create New Invoice.";
-			count=count+1;
+			count3=count3+1;
 		}else if(number == 4){
 				inputString="Report Statistics.";
-			count=count+1;
+			count4=count4+1;
 		}else if(number == 5){
 				inputString="Report: All Invoices.";
-			count=count+1;
+			count5=count5+1;
 		}else if(number == 6){
 				inputString="Search (1) Invoice.";
-			count=count+1;
+			count6=count6+1;
 		}else if(number == 7){
 				inputString="Program Statistics.";
-			count=count+1;
+			count7=count7+1;
 		}else if(number == 8){
 				inputString="Exit";
-			count=count+1;
+			count8=count8+1;
 		}else {
           System.out.println("It is not an option. Try again");	
 		}
 		
 					
-		
+		if(number == 0) {
 		menuChoice.put(count, inputString);
+		}else if(number == 1) {
+			menuChoice.put(count1, inputString);
+		}else if(number == 2) {
+			menuChoice.put(count2, inputString);
+		}else if(number == 3) {
+			menuChoice.put(count3, inputString);
+		}else if(number == 4) {
+			menuChoice.put(count4, inputString);
+		}else if(number == 5) {
+			menuChoice.put(count5, inputString);
+		}else if(number == 6) {
+			menuChoice.put(count6, inputString);
+		}else if(number == 7) {
+			menuChoice.put(count7, inputString);
+		}else if(number == 8) {
+			menuChoice.put(count8, inputString);
+		}
+		
 		counterMap.put(number, menuChoice);
 		
 		System.out.println("0:Press zero(0) to continue.\n1:Press one (1) to exit. ");
@@ -160,7 +186,11 @@ public static void programStatisticsPrintShopSettingMenuWithHowManyNumberSelecte
 	//	Map<Integer,String> menuChoice = new HashMap<Integer,String>();
 		Map<Integer, Map<Integer,String>> counterMap= new HashMap <Integer, Map<Integer,String>>();
 		
-		int count = 0;	
+		
+		int count1 = 0;
+		int count2 = 0;
+		int count3 = 0;
+		int count4 = 0;
 		boolean isExit=true;
 		
 		while(isExit) {
@@ -176,23 +206,33 @@ public static void programStatisticsPrintShopSettingMenuWithHowManyNumberSelecte
 		
 		 if(number == 1) {
 				inputString="Load Data.";
-			count=count+1;
+			count1=count1+1;
 		}else if(number == 2) {
 				inputString="Set Shop Name.";
-			count=count+1;
+			count2=count2+1;
 		}else if(number == 3){
 				inputString="Set Invoice Header";
-			count=count+1;
+			count3=count3+1;
 		}else if(number == 4){
 				inputString="Go Back.";
-			count=count+1;
+			count4=count4+1;
 		}else {
           System.out.println("It is not an option. Try again");	
 		}
 		
-					
 		
-		menuChoice.put(count, inputString);
+		 
+		 if(number == 1) {
+			  menuChoice.put(count1, inputString);
+			}else if(number == 2) {
+			 menuChoice.put(count2, inputString);
+			}else if(number == 3) {
+			 menuChoice.put(count3, inputString);
+			}else if(number == 4) {
+			menuChoice.put(count4, inputString);
+			}
+		
+		
 		counterMap.put(number, menuChoice);
 		
 		System.out.println("0:Press zero(0) to continue.\n1:Press one (1) to exit. ");
@@ -213,7 +253,12 @@ public static void programStatisticsPrintManageShopItemsMenuWithHowManyNumberSel
 	//	Map<Integer,String> menuChoice = new HashMap<Integer,String>();
 		Map<Integer, Map<Integer,String>> counterMap= new HashMap <Integer, Map<Integer,String>>();
 		
-		int count = 0;	
+		
+		int count1 = 0;
+		int count2 = 0;
+		int count3 = 0;
+		int count4 = 0;
+		int count5 = 0;
 		boolean isExit=true;
 		
 		while(isExit) {
@@ -229,26 +274,37 @@ public static void programStatisticsPrintManageShopItemsMenuWithHowManyNumberSel
 		
 		 if(number == 1) {
 			inputString="Add Items.";
-			count=count+1;
+			count1=count1+1;
 		}else if(number == 2) {
 			inputString="Delete Items.";
-			count=count+1;
+			count2=count2+1;
 		}else if(number == 3){
 			inputString="Change Item Price";
-			count=count+1;
+			count3=count3+1;
 		}else if(number == 4){
 			inputString="Report All Items.";
-			count=count+1;
+			count4=count4+1;
 		}else if(number == 5){
 			inputString="Go Back.";
-		    count=count+1;
+		    count5=count5+1;
 	    }else {
           System.out.println("It is not an option. Try again");	
 		}
-		
-					
-		
-		menuChoice.put(count, inputString);
+		 
+		 
+		 
+	 if(number == 1) {
+		 menuChoice.put(count1, inputString);
+		}else if(number == 2) {
+		 menuChoice.put(count2, inputString);
+		}else if(number == 3) {
+		 menuChoice.put(count3, inputString);
+		}else if(number == 4) {
+		 menuChoice.put(count4, inputString);
+		}else if(number == 5) {
+		 menuChoice.put(count5, inputString);
+		}
+
 		counterMap.put(number, menuChoice);
 		
 		System.out.println("0:Press zero(0) to continue.\n1:Press one (1) to exit. ");
