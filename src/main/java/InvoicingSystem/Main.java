@@ -177,7 +177,9 @@ public class Main {
 				}
 				case 7: {
 					Report reportObj = new Report();
-					reportObj.programStatisticsPrintMenuItemWithHowManyNumberSelected();
+					reportObj.programStatisticsPrintMainAppMenuWithHowManyNumberSelected();
+					reportObj.programStatisticsPrintShopSettingMenuWithHowManyNumberSelected();
+					reportObj.programStatisticsPrintManageShopItemsMenuWithHowManyNumberSelected();
 					break;
 				}
 				case 8: {

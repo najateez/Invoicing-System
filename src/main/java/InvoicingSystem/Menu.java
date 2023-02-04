@@ -8,7 +8,7 @@ public class Menu {
 	
 public static void showAllMenusInOneMethod(int menuChoice) {
 	
-	List<String> mainMenuu= Arrays.asList( 
+	String [] appMainMenu = new String[] {
 			"Application Main Menu",
 			"*******************************",
 			"0) Enter URL,user name, and password.",
@@ -21,10 +21,10 @@ public static void showAllMenusInOneMethod(int menuChoice) {
             "7) Program Statistics (Print each Main Menu Item with how many number selected).",
             "8) Exit",
             "*******************************",
-            "Enter a number from menu above:");
+            "Enter a number from menu above:"};
 	
 	
-	List<String> shopSettingMenuu= Arrays.asList( 
+	String [] shopSettingMenu = new String[] {
 			"Shop Setting",
 			"*******************************",
 			"Menu:",
@@ -33,10 +33,10 @@ public static void showAllMenusInOneMethod(int menuChoice) {
 			"3:Set Invoice Header (Tel / Fax / Email / Website) (Data should be saved) ",
 			"4:Go Back",
 			"*******************************",
-			"enter number 1: (case number)");
+			"enter number 1: (case number)"};
 	
 	
-	List<String> ManageShopItemsMenuu= Arrays.asList( 
+	String [] manageShopItemsMenu = new String[] {
 		"Manage Shop Items",
 		"*******************************",
 		"Menu:",
@@ -46,27 +46,27 @@ public static void showAllMenusInOneMethod(int menuChoice) {
 		"4:Report All Items",
 		"5:Go Back",
 		"*******************************",
-		"enter number 1: (case number)");
+		"enter number 1: (case number)"};
 	
 	
 	switch(menuChoice) {
 	case 1:{
-		printMenu(mainMenuu);
+		printMenu(appMainMenu);
 		break;
 	}case 2:{
-		printMenu(shopSettingMenuu);
+		printMenu(shopSettingMenu);
 		break;
 	}case 3:{
-		printMenu(ManageShopItemsMenuu);
+		printMenu(manageShopItemsMenu);
 		break;
 	}}
 	}
 
 	
-	public static void printMenu(List<String> showMenu) {
-		for(String i:showMenu) {
+	public static void printMenu(String [] displayMenus) {
+		for(String i:displayMenus) {
 			System.out.println(i);
-		}
+		} 
 	} 
 
 }
